@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+
+/* nav */
+.navbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+    font-weight: bolder;
+    color:whitesmoke;
+}
+
+.navbar-title {
+    font-size: 2rem;
+    margin: .5rem;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 00;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+    padding:10px;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color:bisque;
+    padding: 2rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: red;
+}
+
+.toggle {
+    position: absolute;
+    right: 1rem;
+    /* only show the burger menu on smaller screen size */
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height:50px;
+}
+
+.toggle .bar {
+    height: 10px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/*Homepage*/
+.home-image {
+    height: 91vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url(./images/chocolate.jpg);
+    max-width: 100%;
+    height:auto;
+}
+
+.home-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:whitesmoke;
+    height: 90vh;
+    font-size:2vw;
+    font-weight: bold;
+}
+
+#page1 {
+    background: brown;
+    color:whitesmoke;
+}
+
+#page2 {
+    background: darkgoldenrod;
+    color:whitesmoke;
+}
+
+#page3 {
+    background: darkorchid;
+    color:whitesmoke;
+}
+
+#page4 {
+    background-color: darkcyan;
+    color:whitesmoke;
+}
+
+/**/
+.invented{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+}
+
+.invented img{
+    max-width: 100%;
+    height: auto;
+}
+
+.history{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+}
+
+.history{
+    max-width: 100%;
+    height:auto;
+}
+
+.types{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 2vw;
+}
+
+.types img{
+    margin-right: 2vw;
+    max-width: 100%;
+    height: auto;
+}
+
+.types-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 2vw;
+    text-align: center;
+}
+
+/*Quiz*/
+.quiz{
+    margin-left: 2vw;
+    font-size: 2vw;
+}
+
+
+
+/* rwd */
+@media (max-width: 800px)
+{
+    /* make nav bar become hamburger style and remove the previous navbar links*/
+    .toggle {
+        display: flex;
+    }
+    .navbar-links {
+       display:none;
+       width:100%;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding:.5rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .invented img{
+        max-width: 50%;
+        height: auto;
+    }
+
+    .history img{
+        max-width: 50%;
+        height: auto;
+    }
+
+    .types img{
+        max-width: 50%;
+        height: auto;
+    }
+}
+
+@media (max-width: 400px)
+{
+    .invented img{
+        max-width: 25%;
+        height: auto;
+    }
+
+    .history img{
+        max-width: 25%;
+        height: auto;
+    }
+
+    .types img{
+        max-width: 25%;
+        height: auto;
+    }
+}
