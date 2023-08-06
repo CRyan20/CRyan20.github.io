@@ -26,7 +26,7 @@ body {
 
 .navbar-links ul {
     margin: 0;
-    padding: 00;
+    padding: 0;
     display: flex;
 }
 
@@ -158,6 +158,16 @@ body {
     font-size: 2vw;
 }
 
+.sources{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    color: whitesmoke;
+    list-style: none;
+    gap:20px;
+}
+
 
 
 /* rwd */
@@ -205,6 +215,11 @@ body {
     }
 
     .types img{
+        max-width: 50%;
+        height: auto;
+    }
+
+    .sources{
         max-width: 50%;
         height: auto;
     }
