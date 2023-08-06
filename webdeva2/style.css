@@ -209,21 +209,3 @@ body {
         height: auto;
     }
 }
-
-@media (max-width: 400px)
-{
-    .invented img{
-        max-width: 25%;
-        height: auto;
-    }
-
-    .history img{
-        max-width: 25%;
-        height: auto;
-    }
-
-    .types img{
-        max-width: 25%;
-        height: auto;
-    }
-}

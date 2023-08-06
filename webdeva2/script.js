@@ -43,6 +43,7 @@ toggleButton.addEventListener("click", () => {navbarLinks.classList.toggle("acti
 //quiz function
 function result()
 {
+  //increase score depending on total answers correct
     var score = 0;
     if(document.getElementById('correct1').checked)
     {
